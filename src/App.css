@@ -1,0 +1,261 @@
+.contenedor {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 5%;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.marca {
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #5b32d6;
+}
+
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header nav a:hover {
+  color: #5b32d6;
+}
+
+.presentacion {
+  margin-top: 40px;
+  padding: 64px 40px;
+  border-radius: 24px;
+  background: #eae3ff;
+}
+
+.etiqueta {
+  color: #5b32d6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.presentacion h1 {
+  max-width: 650px;
+  margin: 18px 0;
+  font-size: clamp(36px, 6vw, 60px);
+  line-height: 1.05;
+}
+
+.presentacion p {
+  max-width: 550px;
+  line-height: 1.7;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: #5b32d6;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background: #4523ad;
+}
+
+.seccion {
+  padding: 50px 0;
+}
+
+.seccion h2,
+.footer h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.catalogo,
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.tarjeta-producto {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: white;
+}
+
+.producto-visual {
+  display: grid;
+  place-items: center;
+  height: 180px;
+  background: #eef0f8;
+  font-size: 80px;
+}
+
+.producto-info {
+  padding: 24px;
+}
+
+.producto-info h3 {
+  margin-top: 0;
+}
+
+.precio {
+  color: #5b32d6;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.footer {
+  padding: 45px 0 24px;
+  background: #182238;
+  color: white;
+}
+
+.tarjeta-equipo {
+  padding: 20px;
+  border: 1px solid #42506b;
+  border-radius: 12px;
+  background: #243149;
+}
+
+.tarjeta-equipo h3 {
+  margin-top: 0;
+}
+
+.copyright {
+  margin-top: 35px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header nav {
+    gap: 16px;
+  }
+
+  .presentacion {
+    padding: 40px 24px;
+  }
+
+  .catalogo,
+  .equipo {
+    grid-template-columns: 1fr;
+  }
+}
+.formulario {
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: white;
+}
+
+.formulario fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.campos-formulario {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.formulario input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #aeb9cb;
+  border-radius: 8px;
+  background: white;
+  color: #182238;
+}
+
+.formulario button {
+  border: 0;
+  cursor: pointer;
+}
+
+.formulario fieldset:disabled {
+  opacity: 0.65;
+}
+
+.formulario button:disabled {
+  cursor: wait;
+}
+
+.ayuda {
+  margin-top: -8px;
+  color: #526078;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mensaje-exito {
+  color: #166534;
+  line-height: 1.6;
+}
+
+.mensaje-error {
+  color: #b91c1c;
+  line-height: 1.6;
+}
+
+.resultado-imagen {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resultado-imagen img {
+  max-width: 100%;
+  width: 240px;
+  max-height: 240px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .campos-formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario {
+    padding: 20px;
+  }
+}

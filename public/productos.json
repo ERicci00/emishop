@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "nombre": "Teclado mecánico",
+    "precio": 65000,
+    "stock": 12,
+    "emoji": "⌨️"
+  },
+  {
+    "id": "2",
+    "nombre": "Mouse inalámbrico",
+    "precio": 28000,
+    "stock": 20,
+    "emoji": "🖱️"
+  },
+  {
+    "id": "3",
+    "nombre": "Auriculares",
+    "precio": 48000,
+    "stock": 8,
+    "emoji": "🎧"
+  }
+]
